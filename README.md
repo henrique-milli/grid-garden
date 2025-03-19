@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# GridGarden
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application for garden planning and digital labelling.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+GridGarden is a web application that helps gardeners plan their gardens using a customizable grid system. Users can add plant varieties to different grid positions, each with their own icon representation.
 
-## Expanding the ESLint configuration
+![GridGarden logo](public/icon.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Customizable garden grid (rows and columns)
+- Plant management with visual icons
+- Zoom controls for detailed planning
+- Print functionality for physical garden references
+- Plant legend showing all unique plants in your plan
+
+## Technologies
+
+- React
+- TypeScript
+- Material-UI
+- Vite
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18.18.0+ or v20.9.0+)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/henrique-milli/grid-garden.git
+cd grid-garden
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Development Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project was created to refresh React development skills in preparation for professional interviews. It demonstrates React hooks, context API, TypeScript integration, and component architecture.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## AI Integration
+
+The project includes exploration of local LLM (Large Language Model) integration to add generative AI capabilities for plant recommendations and garden planning assistance.
+
+## Build
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
+
+## License
+
+MIT
