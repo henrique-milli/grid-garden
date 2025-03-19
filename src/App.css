@@ -1,0 +1,21 @@
+.title {
+  display: grid;
+  grid:  ". img h1. " / 6fr 1fr 3fr 6fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title img {
+  grid-area: img;
+    width: 100%;
+    height: auto;
+}
+
+.title h1 {
+  grid-area: h1;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  align-content: center;
+}

@@ -1,0 +1,47 @@
+@media print {
+
+    .side-panel, .form-container {
+        display: none !important;
+    }
+
+    .content-layout {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .legend-container {
+        width: 100% !important;
+    }
+
+    .legend-grid {
+        display: grid !important;
+        grid: auto / repeat(auto-fill, minmax(100px, 1fr)) !important;
+    }
+
+    .legend-grid p {
+        display: none !important;
+    }
+
+    .grid-container,
+    .grid-viewport,
+    .grid-scaling-container,
+    .grid-content,
+    .grid {
+        width: 100% !important;
+        transform: scale(1) !important;
+    }
+
+    .grid-container {
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    .grid-viewport {
+        overflow: visible !important;
+    }
+
+    .grid-cell {
+        width: auto !important;
+        height: auto !important;
+    }
+}
